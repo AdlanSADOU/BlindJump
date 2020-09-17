@@ -9,14 +9,14 @@
 #define UTILS_H_
 
 #include <stdlib.h>
-#include <unistd.h>
+#include <io.h>
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>
+#include <io.h>
 #include <stdio.h>
-#include <dirent.h>
+// #include <dirent.h>
 #include <stdlib.h>
 
 char *get_next_line(int fd);
