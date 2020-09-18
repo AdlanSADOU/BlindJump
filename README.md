@@ -11,7 +11,7 @@ We rewrote the entire game in plain C.
 - Marton Szuts  
 - Lionel Da Rocha Da Silva  
 
-[![Trailer video](http://img.youtube.com/vi/xPYve8_049M/0.jpg)](http://www.youtube.com/watch?v=xPYve8_049M "Blind Jump")
+[![Trailer video](http://img.youtube.com/vi/xPYve8_049M/0.jpg)](http://www.youtube.com/watch?v=xPYve8_049M "Blind Jump")(video)
 
 ![](https://github.com/AdlanSADOU/BlindJump/blob/master/screenshots/character-creation.png)
 ![](https://github.com/AdlanSADOU/BlindJump/blob/master/screenshots/game.png)
