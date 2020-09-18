@@ -10,22 +10,23 @@
 void get_movement(all_t *s_all)
 {
     if (s_all->s_game.pause == 1) return;
-    if (sfKeyboard_isKeyPressed(sfKeyUp) == 1)
+
+    if (sfKeyboard_isKeyPressed(sfKeyZ) == 1)
         s_all->s_movement.up = 1;
     else
         s_all->s_movement.up = 0;
 
-    if (sfKeyboard_isKeyPressed(sfKeyDown) == 1)
+    if (sfKeyboard_isKeyPressed(sfKeyS) == 1)
         s_all->s_movement.down = 1;
     else
         s_all->s_movement.down = 0;
 
-    if (sfKeyboard_isKeyPressed(sfKeyLeft) == 1)
+    if (sfKeyboard_isKeyPressed(sfKeyQ) == 1)
         s_all->s_movement.left = 1;
     else
         s_all->s_movement.left = 0;
 
-    if (sfKeyboard_isKeyPressed(sfKeyRight) == 1)
+    if (sfKeyboard_isKeyPressed(sfKeyD) == 1)
         s_all->s_movement.right = 1;
     else
         s_all->s_movement.right = 0;

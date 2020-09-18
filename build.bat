@@ -20,15 +20,15 @@ SET LIBS=csfml-window.lib csfml-graphics.lib csfml-audio.lib csfml-system.lib
 
 IF "%COMPILE_MODE%"=="release" (
     SET CFLAGS= /MT /FC /MP /TC /nologo
-    SET NAME=/Fe"release\prog.exe"
+    SET NAME=/Fe"release\BlindJump.exe"
 )
 
 IF "%COMPILE_MODE%"=="debug" (
-    SET CFLAGS= /Zi /MTd /FC /MP /TC
-    SET NAME=/Fe"debug\prog.exe"
+    SET CFLAGS= /Zi /MTd /FC /MP /TC /nologo
+    SET NAME=/Fe"debug\BlindJump.exe"
 )
 
-SET LINK_OPTS= /link %LIBPATH%
+SET LINK_OPTS= /link %LIBPATH% /SUBSYSTEM:CONSOLE
 
 mkdir build
 pushd build

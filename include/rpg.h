@@ -32,6 +32,10 @@
 
 #include "utils.h"
 
+#ifndef DEBUG_MODE
+#define DEBUG_MODE (0)
+#endif
+
 #ifndef MY_PI
 #define MY_PI (3.14159265358979323846)
 #endif /* !MY_PI */
@@ -525,7 +529,7 @@ typedef struct effect {
     sfTexture *light_tx;
     sfVector2f light_pos;
     sfRenderStates *vignette_state;
-    sfSprite *vignette1;
+    sfSprite *vignette1;                // @vignette1 & @vignette2: screen overlays
     sfTexture *vignette1_tx;
     sfSprite *vignette2;
     sfTexture *vignette2_tx;

@@ -50,7 +50,7 @@ void setup(all_t *s_all)
     sfRenderWindow_setFramerateLimit(s_all->s_game.window, 60);
     sfRenderWindow_setPosition(s_all->s_game.window, (sfVector2i){0, 0});
     s_all->s_game.scene = MENU;
-    s_all->s_game.debug_mode = 0;
+    s_all->s_game.debug_mode = DEBUG_MODE;
     s_all->s_game.display_inv = 0, s_all->s_game.pause = 0;
     s_all->s_game.fps = 60, s_all->s_game.volume = 1.0;
     s_all->s_mob = NULL;
