@@ -11,6 +11,7 @@ void movement_up_down2(all_t *s_all)
 {
     s_all->s_player.hero_pos.y += s_all->s_player.hero_speed;
     s_all->s_player.shoot_pos.y += s_all->s_player.hero_speed;
+
     if (s_all->s_player.shooting == 0 ||
     (s_all->s_player.up == 0 && s_all->s_player.down == 0)) {
         sfSprite_setPosition(s_all->s_player.ver_shoot,
@@ -20,6 +21,7 @@ void movement_up_down2(all_t *s_all)
         sfSprite_setPosition(s_all->s_player.hor_shoot,
             s_all->s_player.shoot_pos);
     }
+
     sfSprite_setPosition(s_all->s_player.hero, s_all->s_player.hero_pos);
 }
 

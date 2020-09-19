@@ -94,6 +94,8 @@ void dispay_buttons_pause(all_t *s_all, m_buttons_t *buttons)
     if (s_all->s_game.pause == 0) return;
     m_buttons_t *tmp = buttons;
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     for (; tmp != NULL; tmp = tmp->next) {
         if (tmp->id == 4 && s_all->s_game.scene != LOAD
         && s_all->s_game.scene != OPT) continue;

@@ -10,6 +10,8 @@
 void trash_items(all_t *s_all)
 {
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     sfFloatRect rect = sfSprite_getGlobalBounds(s_all->s_inventory.trash);
     if (sfFloatRect_contains(&rect, mouse.x, mouse.y) == 1
     && s_all->s_inventory.drag == 1

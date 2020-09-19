@@ -82,6 +82,8 @@ void dispay_buttons(all_t *s_all, m_buttons_t *buttons)
 {
     m_buttons_t *tmp = buttons;
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     for (; tmp != NULL; tmp = tmp->next) {
         if (s_all->s_game.pause == 1 || (s_all->s_game.scene == MENU
         && tmp->id > 2) || ((s_all->s_game.scene == OPT

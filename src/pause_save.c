@@ -27,6 +27,8 @@ void check_button2(save_t *temp, all_t *s_all)
 {
     sfVector2i mouse_pos =
     sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse_pos);
+
     sfFloatRect button = sfSprite_getGlobalBounds(temp->button);
     if (sfFloatRect_contains(&button, mouse_pos.x, mouse_pos.y) &&
     temp->fion == 0) {
@@ -41,6 +43,8 @@ void click_button2(save_t *temp, all_t *s_all)
 {
     sfVector2i mouse_pos =
     sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse_pos);
+
     sfFloatRect button = sfSprite_getGlobalBounds(temp->button);
     if (sfFloatRect_contains(&button, mouse_pos.x, mouse_pos.y)) {
         if (s_all->s_game.event.mouseButton.type == sfEvtMouseButtonPressed) {

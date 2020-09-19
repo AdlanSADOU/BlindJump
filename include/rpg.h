@@ -653,6 +653,7 @@ typedef struct all {
     statbox_t s_statbox;
 } all_t;
 
+void convert_mouse_coordinates(sfRenderWindow *window, sfVector2i *mouse_pos);
 void set_volume(all_t *s_all);
 void quest_display(all_t *s_all);
 void free_all_mobs(all_t *s_all);

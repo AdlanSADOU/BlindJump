@@ -73,8 +73,9 @@ void slot_click(all_t *s_all, slots_t *tmp)
 void drag_item(all_t *s_all)
 {
     if (s_all->s_inventory.drag == 1) {
-        sfVector2i mouse =
-            sfMouse_getPositionRenderWindow(s_all->s_game.window);
+        sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+        convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
         slots_t *tmp = s_all->s_inventory.head;
         for (; tmp != NULL; tmp = tmp->next)
             if (tmp->drag == 1) break;

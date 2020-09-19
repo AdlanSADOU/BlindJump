@@ -48,6 +48,8 @@ void init_volume1(all_t *s_all)
 int check_right(all_t *s_all)
 {
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     sfFloatRect r = sfSprite_getGlobalBounds(s_all->s_options.s_volume.right);
     if (sfFloatRect_contains(&r, mouse.x, mouse.y) == sfTrue
     && s_all->s_game.event.mouseButton.type == sfEvtMouseButtonPressed) {
@@ -59,6 +61,8 @@ int check_right(all_t *s_all)
 int check_left(all_t *s_all)
 {
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     sfFloatRect r = sfSprite_getGlobalBounds(s_all->s_options.s_volume.left);
     if (sfFloatRect_contains(&r, mouse.x, mouse.y) == sfTrue
     && s_all->s_game.event.mouseButton.type == sfEvtMouseButtonPressed) {

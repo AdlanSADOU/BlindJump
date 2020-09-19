@@ -43,6 +43,8 @@ void init_fps(all_t *s_all)
 int click_box(all_t *s_all, check_box_t box)
 {
     sfVector2i mouse = sfMouse_getPositionRenderWindow(s_all->s_game.window);
+    convert_mouse_coordinates(s_all->s_game.window, &mouse);
+
     sfFloatRect rect = sfRectangleShape_getGlobalBounds(box.box);
     if (sfFloatRect_contains(&rect, mouse.x, mouse.y) == sfTrue
     && s_all->s_game.event.mouseButton.type == sfEvtMouseButtonPressed) {
