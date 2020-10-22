@@ -3,7 +3,7 @@
 This game was our first year final project!
 It was originaly made by Evan Bowman in c++.
 
-We rewrote the entire game in plain C.
+We rewrote the entire game in plain C99.
 
 ## Co authors:
 
