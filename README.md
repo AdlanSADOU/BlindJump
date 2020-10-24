@@ -10,8 +10,8 @@ We rewrote the entire game in plain C99 on Linux.
 
 ## Co authors:
 
-- Lorentz Romeo  
-- Marton Szuts  
+- (Lorentz Romeo)[https://github.com/L0rentz] 
+- (Marton Szuts)[https://github.com/marttop]
 - Lionel Da Rocha Da Silva  
 
 [![Trailer video](http://img.youtube.com/vi/xPYve8_049M/0.jpg)](http://www.youtube.com/watch?v=xPYve8_049M "Blind Jump")(video)
