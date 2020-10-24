@@ -3,7 +3,8 @@
 This game was our first year final project!
 It was originaly made by Evan Bowman in c++.
 
-We rewrote the entire game in plain C99.
+We rewrote the entire game in plain C99 on Linux.
+This is a Windows port.
 
 ## Co authors:
 
