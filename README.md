@@ -5,8 +5,8 @@ It was originaly made by Evan Bowman in c++.
 
 We rewrote the entire game in plain C99 on Linux.
 
-Use `Makefile` to build this on Linux, you'll have to link (C)SFML yourself, it needs to be updated to use the CSFML library included under `vendor/gcc`. 
-Use `build.bat` to build on Windows.
+- Use `Makefile` to build this on Linux, you'll have to link (C)SFML yourself, it needs to be updated to use the CSFML library included under `/vendor/CSFML/`. 
+- Use `build.bat` to build on Windows.
 
 ## Co authors:
 
