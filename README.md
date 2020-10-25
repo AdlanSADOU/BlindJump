@@ -10,7 +10,7 @@ We rewrote the entire game in plain C99 on Linux.
 
 ## Co authors:
 
-- The awesome [Lorentz Romeo](https://github.com/L0rentz) 
+- The fabulous [Lorentz Romeo](https://github.com/L0rentz) 
 - The insane [Marton Szuts](https://github.com/marttop)
 - The silent Lionel Da Rocha Da Silva  
 
