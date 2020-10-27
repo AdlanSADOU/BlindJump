@@ -14,7 +14,7 @@ We rewrote the entire game in plain C99 on Linux.
 - The insane [Marton Szuts](https://github.com/marttop)
 - The silent [Lionel Da Rocha Da Silva](https://github.com/lionelrs)  
 
-(video)
+(video)                        
 [![Trailer video](http://img.youtube.com/vi/xPYve8_049M/0.jpg)](http://www.youtube.com/watch?v=xPYve8_049M "Blind Jump")
 
 ![](https://github.com/AdlanSADOU/BlindJump/blob/master/screenshots/character-creation.png)
